@@ -1,0 +1,19 @@
+input {
+    width: 300px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+input::placeholder {
+    color:#000;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+

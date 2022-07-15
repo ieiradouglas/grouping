@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000000;
+}
+
+.header-background {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    width: 1300px;
+    margin:0px 10px 0px 10px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    margin-right: 20px;
+}

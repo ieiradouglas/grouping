@@ -1,0 +1,15 @@
+button {
+    width:150px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background: transparent;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #fff;
+}
