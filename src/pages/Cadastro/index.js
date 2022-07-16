@@ -1,5 +1,7 @@
 import React from 'react';
-import "./index.css"
+
+import { Link } from 'react-router-dom'
+import "./index.css";
 import logo from '../../assets/img/LogoVertical.svg'
 
 import Input from "../../components/Input"
@@ -14,7 +16,10 @@ function Cadastro() {
                     <Input type="text" placeholder="Primeiro Nome"/>
                     <Input type="e-mail" placeholder="Seu melhor E-mail"/>
                     <Input type="password" placeholder="Cadastre uma senha"/>
-                    <Button text="Cadastrar"/>
+                    <div className="form-button">
+                        <Button text="Cadastrar"/>
+                        <Link to="/"><Button text="Voltar"/></Link>
+                    </div>
                 </form>
             </div>
         </main>

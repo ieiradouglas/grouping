@@ -1,10 +1,11 @@
 import React from 'react';
 
+
 import "./index.css";
 
-function Button({text}) {
+function Button({text, route}) {
     return(
-        <button>{text}</button>
+        <button to={route}>{text}</button>
     )
 }
 

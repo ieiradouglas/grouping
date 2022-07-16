@@ -1,14 +1,16 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 main {
-    max-width:1300px;
+    width: 100vw;
+}
+
+.container {
     height:100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex:1;
+    margin:10px;
 }
 
 .form-background {
@@ -43,7 +45,11 @@ form input:focus {
 }
 
 form button {
-    margin-top: 20px;
+    margin: 20px;
+}
+
+.btCadastro {
+    align-self: flex-end;
 }
 
 
