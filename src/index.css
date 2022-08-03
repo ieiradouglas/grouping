@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: 'Share Tech Mono', monospace;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #86EFAC;

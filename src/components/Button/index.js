@@ -3,9 +3,9 @@ import React from 'react';
 
 import "./index.css";
 
-function Button({text, route}) {
+function Button({text, onClick}) {
     return(
-        <button to={route}>{text}</button>
+        <button onClick={onClick}>{text}</button>
     )
 }
 

@@ -1,13 +1,32 @@
 import React from 'react';
 
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import "./index.css"
 import logo from '../../assets/img/LogoVertical.svg'
 
 import Input from "../../components/Input"
 import Button from "../../components/Button"
+import Usuarios from "../Usuarios"
+
 
 function Login() {
+
+    let navigate = useNavigate();
+    
+    
+    function handleClick(){
+        let usuario = document.getElementsByClassName("usuario")[0]
+        let senha = document.getElementsByClassName("senha")[0]
+
+        if(usuario.value == "admin" && senha.value == "admin"){
+            navigate("/inicio")
+        }
+        else{
+            navigate("/cadastro")
+        }
+    }
+    
+
     return(
         <main>
             <div className="container">
@@ -15,11 +34,10 @@ function Login() {
                 <div className="form-background">
                     <img src={logo}/>
                     <form onSubmit={(event)=>event.preventDefault()}>
-                        <Input type="text" placeholder="Digite seu E-mail"/>
-                        <Input type="password" placeholder="Digite sua senha"/>
+                        <Input className="usuario" type="text" placeholder="Digite seu E-mail"/>
+                        <Input className="senha" type="password" placeholder="Digite sua senha"/>
                         <div className="form-button">
-                            <Link to="/"><Button text="Login"/></Link>
-                            
+                            <Button onClick={()=>handleClick()} text="Login"/>
                         </div>
                     </form>
                 </div>

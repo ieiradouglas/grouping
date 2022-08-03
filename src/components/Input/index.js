@@ -1,9 +1,9 @@
 import React from 'react';
 import "./index.css";
 
-function Input({placeholder, type, id}) {
+function Input({placeholder, type, id, className}) {
     return(
-        <input type={type} placeholder={placeholder} id={id}/>
+        <input className={className} type={type} placeholder={placeholder} id={id}/>
     )
 }
 

@@ -2,6 +2,7 @@ header {
     display: flex;
     justify-content: center;
     border: 1px solid #000000;
+    margin-top: 1px;
 }
 
 .header-background {
@@ -10,17 +11,40 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 95px;
-    width: 1300px;
+    width: 100vw;
     margin:0px 10px 0px 10px;
 }
 
+
+
 .logo {
     display: flex;
+    margin-left: 80px;
 }
 
 .logo img {
     width: 200px;
     height: 200px;
-    margin-top: 5px;
     margin-right: 20px;
 }
+
+.header-background button {
+    margin-right: 80px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.buttons-left {
+    margin-left: 30px;
+}
+
+.buttons-left button {
+    margin:0px 0px 0px 20px;
+}
+
+
