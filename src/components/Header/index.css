@@ -1,15 +1,18 @@
 header {
+    width: calc(100vw - 1px);
+    margin: auto;
     display: flex;
     justify-content: center;
     border: 1px solid #000000;
-    margin-top: 1px;
 }
+
+
+
 
 .header-background {
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     width: 100vw;
     margin:0px 10px 0px 10px;
@@ -20,34 +23,37 @@ header {
 .logo {
     display: flex;
     margin-left: 80px;
+    
 }
 
 .logo img {
-    width: 200px;
-    height: 200px;
     margin-right: 20px;
-}
-
-.header-background button {
-    margin-right: 80px;
 }
 
 .buttons {
     display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
     align-items: center;
-    flex:1;
-}
 
-.buttons-left {
-    margin-left: 30px;
-    display: flex;
-    display: flex;
 }
-
-.buttons-left button {
-    margin:0px 0px 0px 20px;
+.buttons button {
+    margin:20px;
 }
 
 
+
+
+@media (max-width:728px){
+    .header-background {
+        justify-content: center;
+    }
+    .buttons {
+        justify-content: center;
+        margin:10px;
+    }
+    .buttons button {
+        margin:5px;
+    }
+    .logo {
+        margin-left:30px;
+    }
+}

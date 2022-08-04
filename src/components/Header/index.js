@@ -17,7 +17,6 @@ function Header(){
                 </div>
                 
                 <div className="buttons">
-                    <div className="buttons-left">
                         <Link to="/inicio">
                             <Button
                                 className="btAjuda" 
@@ -30,12 +29,6 @@ function Header(){
                                 text="Perfil"
                             />
                         </Link>
-                    </div>
-                    <Button
-                        className="btAjuda" 
-                        text="Ajuda"
-                        onClick={()=>console.log(alert("Calma, chegaremos lá ainda..."))}
-                    />
                 </div>
             </div>
         </header>

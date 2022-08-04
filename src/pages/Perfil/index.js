@@ -2,16 +2,32 @@ import React from 'react'
 import "./index.css"
 import Header from "../../components/Header"
 
+import toast, {Toaster} from "react-hot-toast";
+
 import {getUsuarios} from "../../index"
 import Input from '../../components/Input';
 
+function notifySuccess(message){
+    toast.success(`${message}`)
+}
 
-const usuarios = getUsuarios();
+
+
 export default function Perfil() {
-  
+  const usuarios = getUsuarios();
+
   return(
     <>
       <Header/>
+      <Toaster
+        toastOptions={{
+          position:"top-right",
+          style: {
+            border: '1px solid black',
+            padding: '16px',
+            }
+          }}
+      />
       <div className="perfil-main">
       <div className="perfil-container">
         <div className="perfil-block">
@@ -23,7 +39,7 @@ export default function Perfil() {
           <h3>Profissão:</h3> <input value={usuarios[0].profession}/>
         </div>
         </div>
-        <textarea className="perfil-description" rows="15" />
+        <textarea onBlur={()=>notifySuccess("Sucesso!")} className="perfil-description" rows="15" />
       </div>
       </div>
     </>

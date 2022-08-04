@@ -1,18 +1,20 @@
 import React from 'react';
-
 import {Link, useNavigate} from 'react-router-dom';
-import "./index.css"
-import logo from '../../assets/img/LogoVertical.svg'
+import toast, {Toaster} from 'react-hot-toast';
 
 import Input from "../../components/Input"
 import Button from "../../components/Button"
 import Usuarios from "../Usuarios"
 
+import "./index.css"
+import logo from '../../assets/img/LogoVertical.svg'
+
+function notifyError(message){
+    toast.error(`${message}`,{duration:3000});
+} 
 
 function Login() {
-
     let navigate = useNavigate();
-    
     
     function handleClick(){
         let usuario = document.getElementsByClassName("usuario")[0]
@@ -22,13 +24,14 @@ function Login() {
             navigate("/inicio")
         }
         else{
-            navigate("/cadastro")
+            notifyError("Usuário ou senha inválidos.")
         }
     }
     
 
     return(
         <main>
+      <div><Toaster/></div>
             <div className="container">
                 <Link className="btCadastro" to="/cadastro"><Button text="Cadastro"/></Link>
                 <div className="form-background">
