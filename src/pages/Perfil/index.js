@@ -21,7 +21,6 @@ export default function Perfil() {
       <Header/>
       <Toaster
         toastOptions={{
-          position:"top-right",
           style: {
             border: '1px solid black',
             padding: '16px',
@@ -39,7 +38,7 @@ export default function Perfil() {
           <h3>Profissão:</h3> <input value={usuarios[0].profession}/>
         </div>
         </div>
-        <textarea onBlur={()=>notifySuccess("Sucesso!")} className="perfil-description" rows="15" />
+        <textarea onBlur={()=>notifySuccess("Atualizado")} className="perfil-description" rows="15" placeholder="Digite aqui sua nova descrição."/>
       </div>
       </div>
     </>

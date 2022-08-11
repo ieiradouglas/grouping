@@ -4,8 +4,9 @@ input {
     padding: 10px;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 1.15rem;
+    font-size: 1rem;
     transition: 0.5s;
+    outline: none;
 }
 
 input::placeholder {
@@ -19,12 +20,12 @@ form input {
 }
 
 form input:placeholder-shown{
-    height: 15px;
+    height: 10px;
 }
 
 form input:focus {
-    height: 45px;
-    padding: 15px;
+    height: 25px;
+    padding: 5px;
 }
 
 

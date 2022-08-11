@@ -1,15 +1,18 @@
 button {
     width:150px;
     height: 45px;
-    border: 1px solid black;
+    border: 1px solid #EDF2F4;
     border-radius: 5px;
     text-align: center;
     background: transparent;
     font-family: 'Share Tech Mono', monospace;
     font-size: 1rem;
     font-weight: 600;
+    color:#EDF2F4;
 }
 
 button:hover {
+    color:#000;
     background-color: #fff;
+    cursor:pointer;
 }

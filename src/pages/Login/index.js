@@ -20,7 +20,10 @@ function Login() {
         let usuario = document.getElementsByClassName("usuario")[0]
         let senha = document.getElementsByClassName("senha")[0]
 
-        if(usuario.value == "admin" && senha.value == "admin"){
+        if(usuario.value == "" || senha.value == ""){
+            notifyError("Preencha os campos")
+        }
+        else if(usuario.value == "admin" && senha.value == "admin"){
             navigate("/inicio")
         }
         else{
