@@ -2,10 +2,15 @@
 .perfil-main{
   width: 100vw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .perfil-container {
   height: 100%;
+  width:80vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +21,7 @@
   flex: 0 1 800px;
   height: 350px;
   resize:none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
   padding:10px;
   border: 1px solid black;
@@ -52,12 +57,45 @@ outline:none;
   border: 5px solid white;
 }
 
+.perfil-usuario {
+  margin:40px;
+}
+
+.info-container {
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px #000;
+  border-radius: 10px;
+  width:80vw;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.infoBlock{
+  width: 50%;
+  color:#EDF2F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.infoList li {
+  margin:20px;
+}
+
 @media (max-width:630px){
   .perfil-container {
     flex-wrap:wrap;
   }
   .perfil-description {
     margin-left: 0px;
+  }
+  .info-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .infoBlock {
+    width: 90%;
   }
 
 }

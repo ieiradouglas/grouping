@@ -11,8 +11,6 @@ function notifySuccess(message){
     toast.success(`${message}`)
 }
 
-
-
 export default function Perfil() {
   const usuarios = getUsuarios();
 
@@ -32,13 +30,30 @@ export default function Perfil() {
         <div className="perfil-block">
           <img src={usuarios[0].img}/>
         
-        <div className="perfil-input">
-          <h3>Nome:</h3> <input  value={usuarios[0].nome}/>
-          <h3>Idade:</h3> <input value={usuarios[0].idade}/>
-          <h3>Profissão:</h3> <input value={usuarios[0].profession}/>
+        <div className="perfil-usuario">
+          <h3>Usuário:{usuarios[0].usuario}</h3>
         </div>
         </div>
         <textarea onBlur={()=>notifySuccess("Atualizado")} className="perfil-description" rows="15" placeholder="Digite aqui sua nova descrição."/>
+      </div>
+      <div className="info-container">
+        <div className="infoBlock">
+          <ul className="infoList">
+            <li>Nome:{usuarios[0].nome}</li>
+            <li>Sobrenome:{usuarios[0].sobrenome}</li>
+            <li>E-mail:{usuarios[0].email}</li>
+            <li>Profissão:{usuarios[0].profession}</li>
+            <li>Celular:{usuarios[0].celular}</li>
+          </ul>
+        </div>
+        <div className="infoBlock">
+          <ul className="infoList">
+            <li>Cep:{usuarios[0].cep}</li>
+            <li>Rua:{usuarios[0].rua}</li>
+            <li>Cidade:{usuarios[0].cidade}</li>
+            <li>Estado:{usuarios[0].estado}</li>
+          </ul>
+        </div>
       </div>
       </div>
     </>

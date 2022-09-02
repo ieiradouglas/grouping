@@ -13,9 +13,8 @@ function Cadastro() {
             <div className="form-background">
                 <img src={logo}/>
                 <form onSubmit={(event)=>event.preventDefault()}>
-                    <Input type="text" placeholder="Primeiro Nome"/>
-                    <Input type="e-mail" placeholder="Seu melhor E-mail"/>
-                    <Input type="password" placeholder="Cadastre uma senha"/>
+                    <Input type="e-mail" placeholder="Digite um nome de usuário..."/>
+                    <Input type="password" placeholder="Digite uma senha..."/>
                     <div className="form-button">
                         <Button text="Cadastrar"/>
                         <Link to="/"><Button text="Voltar"/></Link>

@@ -17,11 +17,22 @@ const notFound = () =>{
 }
 
 export function getUsuarios(){
-  
   let usuarios = [
-    {usuario:"admin", senha:"teste123", nome:"Douglas Vieira da Silva",idade:24, img:"https://avatars.githubusercontent.com/u/44785888?v=4",profession:"Técnico em informática"},
+    {usuario:"ieiradouglas", 
+    nome:"Douglas",
+    sobrenome:"Vieira da Silva",
+    email:"email@teste.com.br", 
+    profession:"Técnico em informática",
+    celular:"(22) 99999-9999",
+    cep:"28888-88",
+    rua:"Rua das Flores",
+    cidade:"Rio de Janeiro",
+    estado:"Rio de Janeiro",
+    idade:24, 
+    img:"https://avatars.githubusercontent.com/u/44785888?v=4"}
     
   ]
+
   return usuarios;
 }
 

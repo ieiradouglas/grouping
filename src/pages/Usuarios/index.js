@@ -19,6 +19,7 @@ export default function Usuarios(){
             usuarios.map((user)=>
               <PerfilBlock
                 img={user.img}
+                name={user.nome}
                 profession={user.profession}
               />
             )

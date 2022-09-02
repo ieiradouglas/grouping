@@ -1,11 +1,11 @@
 .container-list {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
+  width: 90vw;
+  margin:0 auto;
 }
 
 .list { 
   display: flex;
+  flex: row;
   flex-wrap: wrap;
   justify-content: center;
 }

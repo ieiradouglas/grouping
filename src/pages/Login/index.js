@@ -43,7 +43,7 @@ function Login() {
                         <Input className="usuario" type="text" placeholder="Digite seu E-mail"/>
                         <Input className="senha" type="password" placeholder="Digite sua senha"/>
                         <div className="form-button">
-                            <Button onClick={()=>handleClick()} text="Login"/>
+                            <Button onClick={()=>handleClick()} text="Entrar"/>
                         </div>
                     </form>
                 </div>
